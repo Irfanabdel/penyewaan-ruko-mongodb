@@ -1,0 +1,343 @@
+{
+	"info": {
+		"_postman_id": "40274548-061a-4a22-b86d-7a733fe3e9b1",
+		"name": "Sewa_Ruko",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "Get Customer",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/customers/61c3012ed7ada53d8bdcc20c",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"customers",
+								"61c3012ed7ada53d8bdcc20c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save Customer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"Ghilba\",\r\n    \"phone_number\" : \"081354658792\",\r\n    \"address\" : \"Manglayang\",\r\n    \"created_at\" : \"Wed Dec 22 2021 17:42:25 GMT+0700 (Waktu Indonesia Barat)\"\r\n}\r\n\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/customers/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"customers",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Customer",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/customers/61c3018fd7ada53d8bdcc20f",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"customers",
+								"61c3018fd7ada53d8bdcc20f"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ReadByID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/customers/61c3012ed7ada53d8bdcc20c",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"customers",
+								"61c3012ed7ada53d8bdcc20c"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Customer",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Irfan Hadi\",\r\n    \"phone_number\": \"085274707543\",\r\n    \"address\": \"Padang Panjang\",\r\n    \"created_at\": \"2021-12-22T10:42:25.000Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/customers/61c3012ed7ada53d8bdcc20c",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"customers",
+								"61c3012ed7ada53d8bdcc20c"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Location",
+			"item": [
+				{
+					"name": "Get Location",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/locations/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"locations",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save Location",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"Ruko Mawar\",\r\n    \"address\" : \"Jl. Sukajadi No 15, Sumedang\",\r\n    \"size\" : \"10 X 10 Meter\",\r\n    \"price\" : \"5000000\",\r\n    \"created_at\" : \"Wed Dec 22 2021 17:42:25 GMT+0700 (Waktu Indonesia Barat)\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/locations/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"locations",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Location",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "ReadByID Location",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/locations/61c317203f873b6b865ea067",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"locations",
+								"61c317203f873b6b865ea067"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Location",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Ruko Anjani\",\r\n    \"address\": \"Jl. Pahlawan No 5, Bandung\",\r\n    \"size\": \"5 X 10 Meter\",\r\n    \"price\": 10000000,\r\n    \"created_at\": \"2021-12-22T10:42:25.000Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/locations/61c317203f873b6b865ea067",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"locations",
+								"61c317203f873b6b865ea067"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Transaction",
+			"item": [
+				{
+					"name": "Get Transaction",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/transactions/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"transactions",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Save Transaction",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"customer\" : \"61c3012ed7ada53d8bdcc20c\",\r\n    \"transaction_details\" : [{\r\n        \"location\" : \"61c317203f873b6b865ea067\",\r\n        \"subtotal\" : 10000000\r\n    }],\r\n    \"total\" : 10000000,\r\n    \"payment_price\" : 12000000,\r\n    \"change\" : 2000000,\r\n    \"created_at\" : \"Wed Dec 22 2021 17:42:25 GMT+0700 (Waktu Indonesia Barat)\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/transactions/",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"transactions",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Transaction",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "ReadByID Transaction",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:3000/locations/61c317203f873b6b865ea067",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"locations",
+								"61c317203f873b6b865ea067"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Transaction",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Ruko Anjani\",\r\n    \"address\": \"Jl. Pahlawan No 5, Bandung\",\r\n    \"size\": \"5 X 10 Meter\",\r\n    \"price\": 10000000,\r\n    \"created_at\": \"2021-12-22T10:42:25.000Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/locations/61c317203f873b6b865ea067",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"locations",
+								"61c317203f873b6b865ea067"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
