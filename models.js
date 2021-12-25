@@ -1,6 +1,6 @@
 import mongoose from 'mongoose'
 
-const Customer = mongoose.model(
+export const Customer = mongoose.model(
     'Customer',
     mongoose.Schema({
         name : String,
@@ -10,7 +10,7 @@ const Customer = mongoose.model(
     })
 )
 
-const Location = mongoose.model(
+export const Location = mongoose.model(
     'Location',
     mongoose.Schema({
         name : String,
@@ -21,7 +21,7 @@ const Location = mongoose.model(
     })
 )
 
-const Transaction = mongoose.model(
+export const Transaction = mongoose.model(
     'Transaction',
     mongoose.Schema({
         transaction_date : Date,
@@ -42,7 +42,7 @@ const Transaction = mongoose.model(
     })
 )
 
-const TransactionDetail = mongoose.model(
+export const TransactionDetail = mongoose.model(
     'TransactionDetail',
     mongoose.Schema({
         transaction_id : String,
@@ -56,5 +56,3 @@ const TransactionDetail = mongoose.model(
         created_at : Date,
     })
 )
-
-export {Customer, Location, Transaction, TransactionDetail}
